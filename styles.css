@@ -1,0 +1,151 @@
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magneta: hsl(300, 69%, 71%);
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    height: 100%;
+    background: var(--violet);
+    background-image: url(/images/bg-desktop.svg);
+    z-index: -1;
+    color: #fff;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.logo{
+    position: absolute;
+    top: 6.3%;
+}
+.logo img{
+    height: 3em;
+}
+.content{
+    display: flex;
+    align-items: center;
+    /*position: relative;*/
+    margin: 10em auto 0.5em;
+}
+.shots{
+    margin: 0em auto 0.5em;
+    position: relative;
+}
+.shots img{
+    height: 28em;
+}
+.text{
+    width: 430px;
+    margin: 0em auto 0.5em;
+    position: relative;
+    top: -5em;
+    left: -6%;
+}
+.social-icons{
+    position: absolute;
+    left: 85%;
+    bottom: 10%;
+}
+.social-icons .fab{
+    border-radius: 50%;
+    border: solid 1px#fff;
+    padding: 0.4em;
+    margin-left: 0.3em;
+}
+.social-icons .fab:hover{
+    color: var(--soft-magneta);
+    border: solid 1px var(--soft-magneta);
+    cursor: pointer;
+}
+button{
+    width: 14em;
+    height: 4em;
+    border-radius: 2em;
+    margin: 5em auto 1em;
+    color: var(--violet);
+    border: none;
+}
+button:hover{
+    background: var(--soft-magneta);
+    color: #fff;
+    cursor: pointer;
+}
+
+@media all and (max-width: 768px) { 
+    body{
+        background-image: url(/images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .container{
+        align-items: center;
+        margin-bottom: 0;
+        overflow: hidden;
+        padding-bottom: 0;
+    }
+    .content{
+        flex-direction: column;
+        margin: 6em auto 0em;
+        padding-bottom: 0;
+    }
+    .logo{
+        top: 4%;
+        right: 62%;
+    }
+    .logo img{
+        height: 1.8em;
+    }
+    .shots{
+        margin: 0 auto 7em;
+    }
+    .shots img{
+        height: 15em;
+    }
+    .text{
+        width: 300px;
+        text-align: center;
+        margin: 0em auto 0;
+        padding-bottom: 0;
+    }
+    button{
+        height: 3em;
+        margin: 1em auto 1em;
+    }
+    .social-icons{
+        margin: 0.3em auto 0.3em;
+        text-align: center;
+        position: relative;
+    }
+    .social-icons .fab{
+        border-radius: 50%;
+        border: solid 1px #fff;
+        margin: 0.2em 2em 0.4em;
+        padding: 0.5em;
+    }
+    .social-icons .fab:hover{
+        color: var(--soft-magneta);
+        border: solid 1px var(--soft-magneta);
+        cursor: pointer;
+    }
+    footer{
+        margin-top: 0;
+    }
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 52%, 28%); 
+    text-decoration: none;
+}
