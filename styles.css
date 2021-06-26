@@ -82,6 +82,8 @@ button:hover{
         background-image: url(/images/bg-mobile.svg);
         background-repeat: no-repeat;
         height: 100%;
+        background-position: center top;
+        background-size: 100%;
     }
     h1{
         font-size: 20px;
